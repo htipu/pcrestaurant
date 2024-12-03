@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
+import LandingPage from './LandingPage';
+import Menu from './Menu';
+import Contact from './Contact';
 
-const App = () => {
-  return (
-    <div>
-      <h1>Hello, It's my first React App!</h1>
-       <h2>Happy Coding!!</h2>
-    </div>
-  );
-};
+function App() {
+    const [page, setPage] = useState('landing');
+
+    const navigateTo = (page) => {
+        setPage(page);
+    };
+
+    return (
+        <div>
+            {page === 'landing' && <LandingPage navigateTo={navigateTo} />}
+            {page === 'menu' && <Menu navigateTo={navigateTo} />}
+            {page === 'contact' && <Contact navigateTo={navigateTo} />}
+        </div>
+    );
+}
 
 export default App;
