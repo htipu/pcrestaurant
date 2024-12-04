@@ -1,40 +1,48 @@
 import React from 'react';
-import { Typography, Grid2, Card, CardContent } from '@mui/material';
+import Burger from "./images/burger.jpeg"
+import { Card, CardContent, CardMedia, Typography, Divider } from '@mui/material';
 
-function Menus() {
+const menuItems = [
+  {
+    name: "Secret Beast Burger",
+    category: "Main Dishes",
+    description: "Our Secret Beast Burger, featuring our Secret Beast Sauce, consists of fresh tomatoes, pasture-fed beef, crisp lettuce, American cheese, and tangy onions. Comes with a side of fries.",
+    image: Burger,
+    price: "$12.99"
+  }
+];
+
+const Menu = () => {
   return (
     <div>
-      <Typography variant="h4" gutterBottom>
-        Our Menus
-      </Typography>
-      <Grid2 container spacing={3}>
-        <Grid2 item xs={12} sm={6} md={4}>
-          <Card>
-            <CardContent>
-              <Typography variant="h5">Breakfast Menu</Typography>
-              <Typography variant="body1">Pancakes, Eggs, Bacon, and more...</Typography>
-            </CardContent>
-          </Card>
-        </Grid2>
-        <Grid2 item xs={12} sm={6} md={4}>
-          <Card>
-            <CardContent>
-              <Typography variant="h5">Lunch Menu</Typography>
-              <Typography variant="body1">Salads, Sandwiches, Burgers, and more...</Typography>
-            </CardContent>
-          </Card>
-        </Grid2>
-        <Grid2 item xs={12} sm={6} md={4}>
-          <Card>
-            <CardContent>
-              <Typography variant="h5">Dinner Menu</Typography>
-              <Typography variant="body1">Pasta, Steaks, Fish, and more...</Typography>
-            </CardContent>
-          </Card>
-        </Grid2>
-      </Grid2>
+      <div style={{ marginBottom: 20 }}>
+        <Typography variant="h4" sx={{ marginBottom: 2 }}>
+          Main Dishes
+        </Typography>
+        <Divider sx={{ marginBottom: 2 }} />
+        {menuItems
+          .filter(item => item.category === "Main Dishes")
+          .map((item, index) => (
+            <Card key={index} sx={{ maxWidth: 345, marginBottom: 2 }}>
+              <CardMedia
+                component="img"
+                height="194"
+                image={item.image}
+                alt={item.name}
+              />
+              <CardContent>
+                <Typography variant="h6">{item.name}</Typography>
+                <Typography variant="body2" color="text.secondary">
+                  {item.description}
+                </Typography>
+                <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+                  {item.price}
+                </Typography>
+              </CardContent>
+            </Card>
+          ))}
+      </div>
     </div>
   );
 }
-
-export default Menus;
+export default Menu;
