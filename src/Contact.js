@@ -1,24 +1,22 @@
 import React from 'react';
-import Page from './Page';
+import { Typography, Box, TextField, Button } from '@mui/material';
 
-function Contact({ navigateTo }) {
-    return (
-        <Page navigateTo={navigateTo}>
-            <section id="contact" style={styles.contact}>
-                <h2>The Creators!</h2>
-                <h3>Matthew Brana, Hamid Tipu, LAnce Perdue, Tim Ford</h3>
-                <p>Email: info@deliciousbites.com</p>
-                <p>Address: 123 Tasty Ave, Flavor Town, USA</p>
-            </section>
-        </Page>
-    );
+function Contact() {
+  return (
+    <Box style={{ padding: '20px' }}>
+      <Typography variant="h4" gutterBottom>
+        Contact Us
+      </Typography>
+      <form>
+        <TextField fullWidth label="Your Name" margin="normal" />
+        <TextField fullWidth label="Your Email" margin="normal" />
+        <TextField fullWidth label="Your Message" multiline rows={4} margin="normal" />
+        <Button variant="contained" color="primary" type="submit">
+          Send Message
+        </Button>
+      </form>
+    </Box>
+  );
 }
-
-const styles = {
-    contact: {
-        padding: '20px',
-        textAlign: 'center',
-    }
-};
 
 export default Contact;

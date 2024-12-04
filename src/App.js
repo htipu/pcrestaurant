@@ -1,22 +1,25 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { Container } from '@mui/material';
+
 import LandingPage from './LandingPage';
-import Menu from './Menu';
+import Menus from './Menus';
+import AboutUs from './AboutUs';
 import Contact from './Contact';
+import Reservation from './Reservation';
 
 function App() {
-    const [page, setPage] = useState('landing');
-
-    const navigateTo = (page) => {
-        setPage(page);
-    };
-
-    return (
-        <div>
-            {page === 'landing' && <LandingPage navigateTo={navigateTo} />}
-            {page === 'menu' && <Menu navigateTo={navigateTo} />}
-            {page === 'contact' && <Contact navigateTo={navigateTo} />}
-        </div>
-    );
+  return (
+    <Container maxWidth="lg">
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/menus" element={<Menus />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/reservation" element={<Reservation />} />
+      </Routes>
+    </Container>
+  );
 }
 
 export default App;
