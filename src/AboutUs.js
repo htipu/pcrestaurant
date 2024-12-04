@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typography, Box} from '@mui/material';
 import './AboutUs.css';
-import TimImage from './Tim.jpg';
+import TimImage from './images/Tim.jpg';
 
 
 function AboutUs() {
