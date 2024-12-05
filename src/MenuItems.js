@@ -25,7 +25,7 @@ const menuItems = [
     {
       name: "Beastly Chicken Sandwich",
       category: "Main Dishes",
-      description: "A monster of a burger with smoky BBQ sauce, crispy onion rings, a beef patty, cheddar cheese, and lettuce. Served with Beast Fries.",
+      description: "Fried chicken enclosed within two perfectly toasted brioche buns. Accompanied with our Secret Beast sauce and only the freshest of the ingredients.",
       image: ChickenSand,
       price: "$14.49"
     },

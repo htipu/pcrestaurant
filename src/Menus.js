@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardContent, CardMedia, Typography, Divider } from '@mui/material';
+import { Card, CardContent, CardMedia, Typography, Divider, CardActionArea } from '@mui/material';
 import menuItems from './MenuItems'; // Adjust the path as needed
 import BasicTabs from './Tabs';
 
@@ -29,6 +29,7 @@ const Menu = () => {
             .filter(item => item.category === category)
             .map((item, index) => (
               <Card key={index} style={itemStyle}>
+                <CardActionArea>
                 <CardMedia
                   component="img"
                   height="194"
@@ -44,6 +45,7 @@ const Menu = () => {
                     {item.price}
                   </Typography>
                 </CardContent>
+              </CardActionArea>
               </Card>
             ))}
         </div>
