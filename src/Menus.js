@@ -1,49 +1,63 @@
 import React from 'react';
-import Burger from "./images/burger.jpeg"
 import { Card, CardContent, CardMedia, Typography, Divider } from '@mui/material';
-import BasicTabs from './Tabs';
-const menuItems = [
-  {
-    name: "Secret Beast Burger",
-    category: "Main Dishes",
-    description: "Our Secret Beast Burger, featuring our Secret Beast Sauce, consists of fresh tomatoes, pasture-fed beef, crisp lettuce, American cheese, and tangy onions. Comes with a side of fries.",
-    image: Burger,
-    price: "$12.99"
-  }
-];
+import menuItems from './MenuItems'; // Adjust the path as needed
 
 const Menu = () => {
-  return (
-    <div>
-      <BasicTabs></BasicTabs>
+  const renderCategory = (category) => {
+    const containerStyle = {
+      display: 'flex',
+      flexWrap: 'wrap',
+      justifyContent: 'space-around',
+      marginBottom: 20,
+    };
+
+    const itemStyle = {
+      flex: '1 1 30%',
+      margin: '10px',
+      maxWidth: '345px',
+    };
+
+    return (
       <div style={{ marginBottom: 20 }}>
         <Typography variant="h4" sx={{ marginBottom: 2 }}>
-          Main Dishes
+          {category}
         </Typography>
         <Divider sx={{ marginBottom: 2 }} />
-        {menuItems
-          .filter(item => item.category === "Main Dishes")
-          .map((item, index) => (
-            <Card key={index} sx={{ maxWidth: 345, marginBottom: 2 }}>
-              <CardMedia
-                component="img"
-                height="194"
-                image={item.image}
-                alt={item.name}
-              />
-              <CardContent>
-                <Typography variant="h6">{item.name}</Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {item.description}
-                </Typography>
-                <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
-                  {item.price}
-                </Typography>
-              </CardContent>
-            </Card>
-          ))}
+        <div style={containerStyle}>
+          {menuItems
+            .filter(item => item.category === category)
+            .map((item, index) => (
+              <Card key={index} style={itemStyle}>
+                <CardMedia
+                  component="img"
+                  height="194"
+                  image={item.image}
+                  alt={item.name}
+                />
+                <CardContent>
+                  <Typography variant="h6">{item.name}</Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {item.description}
+                  </Typography>
+                  <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+                    {item.price}
+                  </Typography>
+                </CardContent>
+              </Card>
+            ))}
+        </div>
       </div>
+    );
+  };
+
+  return (
+    <div>
+      {renderCategory("Main Dishes")}
+      {renderCategory("Sides")}
+      {renderCategory("Drinks")}
+      {renderCategory("Desserts")}
     </div>
   );
-}
+};
+
 export default Menu;
