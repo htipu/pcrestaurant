@@ -13,7 +13,7 @@ function Reservation() {
       <Typography variant="body1" paragraph>
         Reserve your table now! Please click the button below to fill out the reservation form.
       </Typography>
-      <Button variant="contained" color="primary" href="https://forms.gle/your-google-form-link" target="_blank">
+      <Button variant="contained" color="primary" href="https://forms.gle/Cbz1ynNmz6xZXJQt9" target="_blank">
         Reserve Now
       </Button>
     </Box>
