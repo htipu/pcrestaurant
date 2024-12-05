@@ -2,7 +2,7 @@ import React from 'react';
 import { Typography, Box} from '@mui/material';
 import './AboutUs.css';
 import TimImage from './images/Tim.jpg';
-import Pluh from "./images/pluh-modified.png";
+import HamidImage from "./images/Hamid-modified.png";
 import BasicTabs from './Tabs';
 import MattPic from './images/Matt.jpeg';
 import LancePic from './images/Lance.jpg'
@@ -31,7 +31,7 @@ function AboutUs() {
           <Typography variant="h4" paragraph>
             Hamid
           </Typography>
-          <ImageDisplay src={Pluh} alt='Tim'></ImageDisplay>
+          <ImageDisplay src={HamidImage} alt='Hamid'></ImageDisplay>
           <Typography variant="p" paragraph>
             I'm Hamid Tipu, a 2nd year Computer Science student from Wappingers Falls who's interested in being a productive member of society. Currently, I've been honing my skills by sleeping, watching shows, and generally wasting time or finding new ways to waste time. Thank you for visiting our website!
           </Typography>
