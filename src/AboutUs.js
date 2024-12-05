@@ -2,6 +2,7 @@ import React from 'react';
 import { Typography, Box} from '@mui/material';
 import './AboutUs.css';
 import TimImage from './images/Tim.jpg';
+import Pluh from "./images/pluh-modified.png";
 import BasicTabs from './Tabs';
 
 function AboutUs() {
@@ -13,25 +14,25 @@ function AboutUs() {
 
   return (
     <><Box sx={{
-      backgroundColor: '#f14545'
+      backgroundColor: '#11191b'
     }}>
       <BasicTabs></BasicTabs>
       <Typography id = 'Header' variant="h1" gutterBottom color='white'>
         About Us
       </Typography>
-    </Box>
     <Box>
-    <Typography id = 'Header' variant="h3" gutterBottom color='black'>
+    <Typography id = 'Header' variant="h3" gutterBottom color='white'>
         Team HTML
       </Typography>
+      </Box>
       <div style = {{display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', textAlign: 'center', gridGap: '50px'}}>
         <div class = 'bio'>
             <Typography variant="h4" paragraph>
               Hamid
             </Typography>
-            
+            <ImageDisplay src = {Pluh} alt = 'Tim'></ImageDisplay>
             <Typography variant="p" paragraph>
-              Hamid - Write your bio here.
+              I'm Hamid Tipu, a 2nd year Computer Science student from Wappingers Falls who's interested in being a productive member of society. Currently, I've been honing my skills by sleeping, watching shows, and generally wasting time or finding new ways to waste time. Thank you for visiting our website!
             </Typography>
           </div>
           <div class = 'bio'>
