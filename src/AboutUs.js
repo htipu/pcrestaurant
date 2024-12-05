@@ -13,55 +13,53 @@ function AboutUs() {
 }
 
   return (
-    <><Box sx={{
-      backgroundColor: '#11191b'
-    }}>
+    <><Box>
       <BasicTabs></BasicTabs>
-      <Typography id = 'Header' variant="h1" gutterBottom color='white'>
+      <Typography id='Header' variant="h1" gutterBottom color='white'>
         About Us
       </Typography>
-    <Box>
-    <Typography id = 'Header' variant="h3" gutterBottom color='white'>
-        Team HTML
-      </Typography>
+      <Box>
+        <Typography id='Header' variant="h3" gutterBottom color='white'>
+          Team HTML
+        </Typography>
       </Box>
-      <div style = {{display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', textAlign: 'center', gridGap: '50px'}}>
-        <div class = 'bio'>
-            <Typography variant="h4" paragraph>
-              Hamid
-            </Typography>
-            <ImageDisplay src = {Pluh} alt = 'Tim'></ImageDisplay>
-            <Typography variant="p" paragraph>
-              I'm Hamid Tipu, a 2nd year Computer Science student from Wappingers Falls who's interested in being a productive member of society. Currently, I've been honing my skills by sleeping, watching shows, and generally wasting time or finding new ways to waste time. Thank you for visiting our website!
-            </Typography>
-          </div>
-          <div class = 'bio'>
-            <Typography variant="h4" paragraph>
-              Tim
-            </Typography>
-            <ImageDisplay src = {TimImage} alt = 'Tim'></ImageDisplay>
-            <Typography variant="p" paragraph>
-            I'm Tim Ford, a student at Marist College, majoring in Computer Science with a concentration in Software Development. I've been coding since the beginning of high school, and since then have only continued furthering my research into many areas of Computer Science. I have experience with languages like Python, Java, and JavaScript, as well as frameworks such as React. Beyond my studies, I'm involved in the Marist College Computer Society and enjoy rock climbing. Thanks for stopping by!
-            </Typography>
-          </div>
-          <div class = 'bio'>
-            <Typography variant="h4" paragraph>
-              Matt
-            </Typography>
-            <Typography variant="p" paragraph>
-              Matt - Write your bio here.
-            </Typography>
-          </div>
-          <div class = 'bio'>
-            <Typography variant="h4" paragraph>
-              Lance
-            </Typography>
-            <Typography variant="p" paragraph>
-              Lance - Write your bio here.
-            </Typography>
-          </div>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', textAlign: 'center', gridGap: '50px' }}>
+        <div class='bio'>
+          <Typography variant="h4" paragraph>
+            Hamid
+          </Typography>
+          <ImageDisplay src={Pluh} alt='Tim'></ImageDisplay>
+          <Typography variant="p" paragraph>
+            I'm Hamid Tipu, a 2nd year Computer Science student from Wappingers Falls who's interested in being a productive member of society. Currently, I've been honing my skills by sleeping, watching shows, and generally wasting time or finding new ways to waste time. Thank you for visiting our website!
+          </Typography>
         </div>
-      </Box></>
+        <div class='bio'>
+          <Typography variant="h4" paragraph>
+            Tim
+          </Typography>
+          <ImageDisplay src={TimImage} alt='Tim'></ImageDisplay>
+          <Typography variant="p" paragraph>
+            I'm Tim Ford, a student at Marist College, majoring in Computer Science with a concentration in Software Development. I've been coding since the beginning of high school, and since then have only continued furthering my research into many areas of Computer Science. I have experience with languages like Python, Java, and JavaScript, as well as frameworks such as React. Beyond my studies, I'm involved in the Marist College Computer Society and enjoy rock climbing. Thanks for stopping by!
+          </Typography>
+        </div>
+        <div class='bio'>
+          <Typography variant="h4" paragraph>
+            Matt
+          </Typography>
+          <Typography variant="p" paragraph>
+            Matt - Write your bio here.
+          </Typography>
+        </div>
+        <div class='bio'>
+          <Typography variant="h4" paragraph>
+            Lance
+          </Typography>
+          <Typography variant="p" paragraph>
+            Lance - Write your bio here.
+          </Typography>
+        </div>
+      </div>
+    </Box></>
   );
 }
 

@@ -1,21 +1,19 @@
 #Header {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     min-height: 15vh;
-    text-align: center;
-    
+    text-align: center;  
 }
 
 .memberBios {
     text-align: center;
-    
-    
 }
 
 .bio {
-    background-color: rgb(226, 154, 154);
+    background-color: rgb(176, 67, 67);
     color: white;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
-    
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
 }
 
+body {
+    background-color: #11191b
+}
