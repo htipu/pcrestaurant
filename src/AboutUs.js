@@ -2,7 +2,7 @@ import React from 'react';
 import { Typography, Box} from '@mui/material';
 import './AboutUs.css';
 import TimImage from './images/Tim.jpg';
-
+import BasicTabs from './Tabs';
 
 function AboutUs() {
   
@@ -15,6 +15,7 @@ function AboutUs() {
     <><Box sx={{
       backgroundColor: '#f14545'
     }}>
+      <BasicTabs></BasicTabs>
       <Typography id = 'Header' variant="h1" gutterBottom color='white'>
         About Us
       </Typography>

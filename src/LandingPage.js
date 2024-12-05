@@ -2,9 +2,12 @@ import React from 'react';
 import { Typography, Button, Box } from '@mui/material';
 import { Link } from 'react-router-dom';
 
+import BasicTabs from './Tabs';
+
 function LandingPage() {
   return (
     <Box textAlign="center" style={{ padding: '20px' }}>
+      <BasicTabs></BasicTabs>
       <Typography variant="h2" paragraph>
         Secret Beast Restaurant
       </Typography>

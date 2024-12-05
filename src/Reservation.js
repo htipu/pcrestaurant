@@ -1,9 +1,12 @@
 import React from 'react';
 import { Typography, Box, Button } from '@mui/material';
+import BasicTabs from './Tabs';
+
 
 function Reservation() {
   return (
     <Box style={{ padding: '20px' }}>
+      <BasicTabs></BasicTabs>
       <Typography variant="h4" gutterBottom>
         Online Reservation
       </Typography>

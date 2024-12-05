@@ -1,7 +1,7 @@
 import React from 'react';
 import Burger from "./images/burger.jpeg"
 import { Card, CardContent, CardMedia, Typography, Divider } from '@mui/material';
-
+import BasicTabs from './Tabs';
 const menuItems = [
   {
     name: "Secret Beast Burger",
@@ -15,6 +15,7 @@ const menuItems = [
 const Menu = () => {
   return (
     <div>
+      <BasicTabs></BasicTabs>
       <div style={{ marginBottom: 20 }}>
         <Typography variant="h4" sx={{ marginBottom: 2 }}>
           Main Dishes
