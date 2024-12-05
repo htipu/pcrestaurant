@@ -1,9 +1,11 @@
 import React from 'react';
 import { Typography, Box, TextField, Button } from '@mui/material';
+import BasicTabs from './Tabs';
 
 function Contact() {
   return (
     <Box style={{ padding: '20px' }}>
+      <BasicTabs></BasicTabs>
       <Typography variant="h4" gutterBottom>
         Contact Us
       </Typography>

@@ -18,9 +18,8 @@ const Menu = () => {
       maxWidth: '345px',
     };
 
-    return (
-      <div style={{ marginBottom: 20 }}>
-        <BasicTabs></BasicTabs>
+    return (      
+        <div style={{ marginBottom: 20 }}>
         <Typography variant="h4" sx={{ marginBottom: 2 }}>
           {category}
         </Typography>
@@ -54,6 +53,8 @@ const Menu = () => {
 
   return (
     <div>
+        <BasicTabs>
+        </BasicTabs>
       {renderCategory("Main Dishes")}
       {renderCategory("Sides")}
       {renderCategory("Drinks")}
