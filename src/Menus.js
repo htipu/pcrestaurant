@@ -18,9 +18,9 @@ const Menu = () => {
       maxWidth: '345px',
     };
 
-    return (      
+    return (     
         <div style={{ marginBottom: 20 }}>
-        <Typography variant="h4" sx={{ marginBottom: 2 }}>
+        <Typography variant="h4" sx={{ marginBottom: 2}}>
           {category}
         </Typography>
         <Divider sx={{ marginBottom: 2 }} />
@@ -37,7 +37,7 @@ const Menu = () => {
                   alt={item.name}
                 />
                 <CardContent>
-                  <Typography variant="h6">{item.name}</Typography>
+                  <Typography variant="h6"> {item.name} </Typography>
                   <Typography variant="body2" color="text.secondary">
                     {item.description}
                   </Typography>
