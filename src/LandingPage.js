@@ -1,9 +1,9 @@
 import React from 'react';
-import { Typography, Button, Box } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Typography, Box, BottomNavigation } from '@mui/material';
 import BasicTabs from './Tabs';
 import './LandingPage.css';
 import background from './images/LandingPicture.jpg';
+import Footer from './Footer'
 
 function LandingPage() {
   const backgroundpic = {
@@ -21,7 +21,7 @@ function LandingPage() {
   return (
     <>
       <div style={backgroundpic} />
-      <Box textAlign="center" style={{ position: 'relative', zIndex: 1 }}>
+      <Box textAlign="center" style={{position: 'relative', zIndex: 1}}>
         <BasicTabs />
         <Typography variant="h2" paragraph color="#FFFFFF">
           Secret Beast Restaurant
@@ -29,16 +29,14 @@ function LandingPage() {
         <Typography variant="h4" paragraph color="#FFFFFF">
           Welcome to Secret Beast Restaurant! We're delighted to have you.
         </Typography>
-        <Button variant="contained" color="secondary" component={Link} to="/menus" style={{ marginRight: '10px' }}>
-          View Menus
-        </Button>
-        <Button variant="contained" color="secondary" component={Link} to="/about" style={{ marginRight: '10px' }}>
-          About Us
-        </Button>
-        <Button variant="contained" color="secondary" component={Link} to="/contact">
-          Contact Us
-        </Button>
+       
+        <div style={{height: '68vh', width:'100%'}}></div>
+
+        <div style={{height: '100vh', backgroundColor:'#11191b', margin:'0',color:'white'}}>
+          
+        </div>
       </Box>
+      <Footer></Footer>
     </>
   );
 }

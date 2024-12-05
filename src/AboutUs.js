@@ -5,6 +5,8 @@ import TimImage from './images/Tim.jpg';
 import Pluh from "./images/pluh-modified.png";
 import BasicTabs from './Tabs';
 import MattPic from './images/Matt.jpeg';
+import LancePic from './images/Lance.jpg'
+import Footer from './Footer'
 
 function AboutUs() {
   
@@ -56,11 +58,13 @@ function AboutUs() {
             <Typography variant="h4" paragraph>
               Lance
             </Typography>
+            <ImageDisplay src = {LancePic} alt = 'Lance'></ImageDisplay>
             <Typography variant="p" paragraph>
-              Lance - Write your bio here.
+              I'm a computer science major at Marist College with a focus on software developement. I have experience with java, python, html, css, javascript, and react. In my free time, I enjoy rock climbing and snowboarding.
             </Typography>
           </div>
         </div>
+        <Footer></Footer>
       </Box></>
   );
 }

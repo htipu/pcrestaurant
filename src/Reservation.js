@@ -1,12 +1,13 @@
 import React from 'react';
 import { Typography, Box, Button } from '@mui/material';
 import BasicTabs from './Tabs';
+import Footer from './Footer'
 
 
 function Reservation() {
   return (
     <Box sx={{ backgroundColor: "#11191b", minHeight: "100vh", width: "100%", margin: 0, padding: 0}}>
-    <Box style={{ padding: '30px'}}>
+    <Box style={{ padding: '0px'}}>
       <BasicTabs></BasicTabs>
       <Typography variant="h3" gutterBottom color="white">
         Online Reservation
@@ -18,6 +19,9 @@ function Reservation() {
         Reserve Now
       </Button>
     </Box>
+    <div style={{height:'50rem'}}>
+    </div>
+    <Footer></Footer>
     </Box>
   );
 }

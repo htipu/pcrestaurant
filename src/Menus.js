@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Card, CardContent, CardMedia, Typography, Divider, CardActionArea } from '@mui/material';
 import menuItems from './MenuItems';
 import BasicTabs from './Tabs';
+import Footer from './Footer';
 
 const Menu = () => {
   
@@ -61,6 +62,7 @@ const Menu = () => {
       {renderCategory("Sides")}
       {renderCategory("Drinks")}
       {renderCategory("Desserts")}
+      <Footer></Footer>
     </Box>
   );
 };
