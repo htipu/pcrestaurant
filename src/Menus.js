@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, CardContent, CardMedia, Typography, Divider } from '@mui/material';
 import menuItems from './MenuItems'; // Adjust the path as needed
+import BasicTabs from './Tabs';
 
 const Menu = () => {
   const renderCategory = (category) => {
@@ -17,8 +18,8 @@ const Menu = () => {
       maxWidth: '345px',
     };
 
-    return (
-      <div style={{ marginBottom: 20 }}>
+    return (      
+        <div style={{ marginBottom: 20 }}>
         <Typography variant="h4" sx={{ marginBottom: 2 }}>
           {category}
         </Typography>
@@ -52,6 +53,8 @@ const Menu = () => {
 
   return (
     <div>
+        <BasicTabs>
+        </BasicTabs>
       {renderCategory("Main Dishes")}
       {renderCategory("Sides")}
       {renderCategory("Drinks")}
