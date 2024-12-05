@@ -57,13 +57,13 @@ export default function BasicTabs() {
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" centered
-        textColor="secondary"
+        textColor="secondary.light"
         indicatorColor="secondary"
         >
-          <Tab label='Home'  to='/' component={Link} {...a11yProps(0)} />
-          <Tab label="Menu" to='/menus' component={Link}{...a11yProps(1)}/>
-          <Tab label="About" to='/about' component={Link} {...a11yProps(2)}/>
-          <Tab label="Book Table" to='/reservation' component={Link} {...a11yProps(3)}/>
+          <Tab label='Home' to='/' component={Link} {...a11yProps(0)} sx={{color: "white"}}/>
+          <Tab label="Menu" to='/menus' component={Link}{...a11yProps(1)} sx={{color: "white"}}/>
+          <Tab label="About" to='/about' component={Link} {...a11yProps(2)}sx={{color: "white"}}/>
+          <Tab label="Book Table" to='/reservation' component={Link} {...a11yProps(3)}sx={{color: "white"}}/>
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
