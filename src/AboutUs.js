@@ -49,7 +49,7 @@ function AboutUs() {
             </Typography>
             <ImageDisplay src = {MattPic} alt = 'Matt'></ImageDisplay>
             <Typography variant="p" paragraph>
-            I am Matthew Brana. I am a Computer Sciene major at Marist College. I have a strong interest in the fields of back end development. I spend my time hanging out with friends and playing volleyball.
+            I am Matthew Brana. I am a Computer Science major at Marist College. I have a strong interest in the fields of back end development. I spend my time hanging out with friends and playing volleyball.
             </Typography>
           </div>
           <div class = 'bio'>
