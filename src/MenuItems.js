@@ -18,35 +18,35 @@ const menuItems = [
     {
       name: "Secret Beast Burger",
       category: "Main Dishes",
-      description: "Our Secret Beast Burger, featuring our Secret Beast Sauce, consists of fresh tomatoes, pasture-fed beef, crisp lettuce, American cheese, and tangy onions. Comes with a side of Beast Fries.",
+      description: "Our Secret Beast Burger, featuring our Secret Beast Sauce. Comes with a side of Beast Fries.",
       image: Burger,
       price: "$12.99"
     },
     {
       name: "Beastly Chicken Sandwich",
       category: "Main Dishes",
-      description: "Fried chicken enclosed within two perfectly toasted brioche buns. Accompanied with our Secret Beast sauce and only the freshest of the ingredients.",
+      description: "Perfectly seasoned fried chicken enclosed within two perfectly toasted brioche buns.",
       image: ChickenSand,
       price: "$14.49"
     },
     {
       name: "Beast BLT",
       category: "Main Dishes",
-      description: "Delicious BLT .",
+      description: "A twist on the classic sandwich, you'll be sure to enjoy our savory and filling Beast BLT!",
       image: BLT,
       price: "$12.49"
     },
     {
       name: "Beast Supreme Veggie Burger",
       category: "Main Dishes",
-      description: "A plant-based veggie patty loaded with lettuce, tomato, pickles, and topped with creamy avocado and Secret Beast sauce.",
+      description: "A plant-based version of our Secret Beast Burrger, featuring our famous Secret Beast Sauce, of course!",
       image: Veggie,
       price: "$11.99"
     },
     {
       name: "Spicy Beast Burger",
       category: "Main Dishes",
-      description: "Get ready for the heat! A fiery burger with jalapeños, spicy pepper jack cheese, and our special hot sauce.",
+      description: "A spicy alternative, our Spicy Beast Burger features our Spicy Beast Sauce. Comes with a side of Beast Fries.",
       image: Spicy,
       price: "$13.99"
     },
@@ -61,7 +61,7 @@ const menuItems = [
     {
       name: "Beastly Mozzarella Sticks",
       category: "Sides",
-      description: "Crispy onion rings with a perfect golden crunch, served with a spicy dipping sauce.",
+      description: "Crispy onion rings with a perfect golden crunch, served with our Beast dipping sauce.",
       image: Mozz,
       price: "$4.49"
     },
@@ -75,7 +75,7 @@ const menuItems = [
     {
       name: "Secret Beast Salad",
       category: "Sides",
-      description: "A fresh salad with mixed greens, tomatoes, cucumbers, and topped with Beast's own ranch dressing.",
+      description: "A fresh salad with mixed greens, tomatoes, cucumbers, and topped with some Secret Beast Dressing.",
       image: Salad,
       price: "$4.99"
     },
@@ -83,21 +83,21 @@ const menuItems = [
     {
       name: "Beast Shake",
       category: "Drinks",
-      description: "A thick and creamy milkshake, available in chocolate, vanilla, or strawberry. Topped with whipped cream.",
+      description: "Thick and creamy milkshake, available in chocolate, vanilla, or strawberry. Topped with whipped cream.",
       image: Shake,
       price: "$4.99"
     },
     {
       name: "Beastly Lemonade",
       category: "Drinks",
-      description: "Freshly squeezed lemonade, tangy and sweet, perfect for cooling off after a spicy Beast burger.",
+      description: "Freshly squeezed lemonade, tangy and sweet, perfect for cooling off after a spicy Beast burger. Comes with lemon wedge.",
       image: Lemonade,
       price: "$2.79"
     },
     {
       name: "Iced Beast Tea",
       category: "Drinks",
-      description: "A refreshing iced tea, served cold with a slice of lemon and sweetened to your liking.",
+      description: "A refreshing iced tea, served cold with a slice of lemon and sweetened to your liking. Squeeze the lemon in for an added kick!",
       image: IcedTea, // Placeholder image
       price: "$2.29"
     },
@@ -118,7 +118,7 @@ const menuItems = [
     {
       name: "Beastly Pie",
       category: "Desserts",
-      description: "A warm apple pie with a buttery crust, served with vanilla ice cream.",
+      description: "A warm, fresh apple pie with a buttery crust and to die for flavor, served with vanilla ice cream.",
       image: Pie, // Placeholder image for Pie
       price: "$3.99"
     }

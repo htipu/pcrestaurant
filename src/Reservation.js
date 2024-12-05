@@ -5,7 +5,7 @@ import BasicTabs from './Tabs';
 
 function Reservation() {
   return (
-    <Box style={{ padding: '20px' }}>
+    <Box style={{ padding: '0px' }}>
       <BasicTabs></BasicTabs>
       <Typography variant="h4" gutterBottom>
         Online Reservation
