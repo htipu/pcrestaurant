@@ -1,5 +1,9 @@
 .footerContent{
     color: white;
     text-align: center;
-    font-size: 3em;
+    font-size: 3rem;
+}
+.contactInfo{
+    text-align: center;
+    font-size: 1rem;
 }

@@ -5,7 +5,10 @@ const Footer =()=>{
     return(
         <footer className='footer'>
             <div className='footerContent'>
-                Footer Component
+                Contact Us
+                <div className='contactInfo'>
+                    Location - Call - Gmail
+                </div>
             </div>
         </footer>
     )
