@@ -4,6 +4,7 @@ import './AboutUs.css';
 import TimImage from './images/Tim.jpg';
 import Pluh from "./images/pluh-modified.png";
 import BasicTabs from './Tabs';
+import MattPic from './images/Matt.jpeg';
 
 function AboutUs() {
   
@@ -40,26 +41,27 @@ function AboutUs() {
           <ImageDisplay src={TimImage} alt='Tim'></ImageDisplay>
           <Typography variant="p" paragraph>
             I'm Tim Ford, a student at Marist College, majoring in Computer Science with a concentration in Software Development. I've been coding since the beginning of high school, and since then have only continued furthering my research into many areas of Computer Science. I have experience with languages like Python, Java, and JavaScript, as well as frameworks such as React. Beyond my studies, I'm involved in the Marist College Computer Society and enjoy rock climbing. Thanks for stopping by!
-          </Typography>
+            </Typography>
+          </div>
+          <div class = 'bio'>
+            <Typography variant="h4" paragraph>
+              Matt
+            </Typography>
+            <ImageDisplay src = {MattPic} alt = 'Matt'></ImageDisplay>
+            <Typography variant="p" paragraph>
+            I am Matthew Brana. I am a Computer Sciene major at Marist College. I have a strong interest in the fields of back end development. I spend my time hanging out with friends and playing volleyball.
+            </Typography>
+          </div>
+          <div class = 'bio'>
+            <Typography variant="h4" paragraph>
+              Lance
+            </Typography>
+            <Typography variant="p" paragraph>
+              Lance - Write your bio here.
+            </Typography>
+          </div>
         </div>
-        <div class='bio'>
-          <Typography variant="h4" paragraph>
-            Matt
-          </Typography>
-          <Typography variant="p" paragraph>
-            Matt - Write your bio here.
-          </Typography>
-        </div>
-        <div class='bio'>
-          <Typography variant="h4" paragraph>
-            Lance
-          </Typography>
-          <Typography variant="p" paragraph>
-            Lance - Write your bio here.
-          </Typography>
-        </div>
-      </div>
-    </Box></>
+      </Box></>
   );
 }
 
