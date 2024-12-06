@@ -7,7 +7,7 @@ const Footer =()=>{
             <div className='footerContent'>
                 Contact Us
                 <div className='contactInfo'>
-                    Location - Call - Gmail
+                    Location - Phone Number - Gmail - Hours
                 </div>
             </div>
         </footer>
