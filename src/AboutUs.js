@@ -18,11 +18,14 @@ function AboutUs() {
   return (
     <><Box>
       <BasicTabs></BasicTabs>
-      <Typography id='Header' variant="h1" gutterBottom color='white'>
+      <hr/>
+      <Typography variant="h2" gutterBottom color='white' textAlign={"center"}>
         About Us
       </Typography>
+      <hr/>
+      <br/>
       <Box>
-        <Typography id='Header' variant="h3" gutterBottom color='white'>
+        <Typography id='Header' variant="h4" gutterBottom color='white' textAlign={"center"}>
           Team HTML
         </Typography>
       </Box>
@@ -31,7 +34,7 @@ function AboutUs() {
           <Typography variant="h4" paragraph>
             Hamid
           </Typography>
-          <ImageDisplay src={HamidImage} alt='Hamid'></ImageDisplay>
+          <ImageDisplay src={HamidImage} alt='TipuHamid'></ImageDisplay>
           <Typography variant="p" paragraph>
             I'm Hamid Tipu, a 2nd year Computer Science student from Wappingers Falls who's interested in being a productive member of society. Currently, I've been honing my skills by sleeping, watching shows, and generally wasting time or finding new ways to waste time. Thank you for visiting our website!
           </Typography>
@@ -40,7 +43,7 @@ function AboutUs() {
           <Typography variant="h4" paragraph>
             Tim
           </Typography>
-          <ImageDisplay src={TimImage} alt='Tim'></ImageDisplay>
+          <ImageDisplay src={TimImage} alt='FordTim'></ImageDisplay>
           <Typography variant="p" paragraph>
             I'm Tim Ford, a student at Marist College, majoring in Computer Science with a concentration in Software Development. I've been coding since the beginning of high school, and since then have only continued furthering my research into many areas of Computer Science. I have experience with languages like Python, Java, and JavaScript, as well as frameworks such as React. Beyond my studies, I'm involved in the Marist College Computer Society and enjoy rock climbing. Thanks for stopping by!
             </Typography>
@@ -49,7 +52,7 @@ function AboutUs() {
             <Typography variant="h4" paragraph>
               Matt
             </Typography>
-            <ImageDisplay src = {MattPic} alt = 'Matt'></ImageDisplay>
+            <ImageDisplay src = {MattPic} alt = 'BranaMatt'></ImageDisplay>
             <Typography variant="p" paragraph>
             I am Matthew Brana. I am a Computer Science major at Marist College. I have a strong interest in the fields of back end development. I spend my time hanging out with friends and playing volleyball.
             </Typography>
@@ -58,7 +61,7 @@ function AboutUs() {
             <Typography variant="h4" paragraph>
               Lance
             </Typography>
-            <ImageDisplay src = {LancePic} alt = 'Lance'></ImageDisplay>
+            <ImageDisplay src = {LancePic} alt = 'PerdueLance'></ImageDisplay>
             <Typography variant="p" paragraph>
               I'm a computer science major at Marist College with a focus on software developement. I have experience with java, python, html, css, javascript, and react. In my free time, I enjoy rock climbing and snowboarding.
             </Typography>

@@ -10,9 +10,11 @@ function Reservation() {
     <Box sx={{ backgroundColor: "#11191b", minHeight: "100vh", width: "100%", margin: 0, padding: 0}}>
     <Box style={{ padding: '0px'}}>
       <BasicTabs></BasicTabs>
-      <Typography variant="h3" gutterBottom color="white">
+      <hr/>
+      <Typography variant="h2" gutterBottom color="white">
         Online Reservation
       </Typography>
+      <hr/>
       <Typography variant="h5" paragraph color="white" >
         Reserve your table now! Please click the button below to fill out our reservation form.
       </Typography>

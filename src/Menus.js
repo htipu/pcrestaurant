@@ -36,7 +36,7 @@ const Menu = () => {
                     component="img"
                     height="194"
                     image={item.image}
-                    alt={item.name}
+                    alt={""}
                   />
                   <CardContent>
                     <Typography variant="h6">{item.name}</Typography>
@@ -58,9 +58,17 @@ const Menu = () => {
   return (
     <Box sx={{ backgroundColor: "#11191b", minHeight: "100vh", width: "100%", margin: 0, padding: 0}}>
       <BasicTabs />
+      <hr/>
+              <Typography variant="h2" sx={{ marginBottom: 2, color: "white", textAlign: "center" }}>
+          {"Menu"}
+          </Typography>
+          <hr/>
       {renderCategory("Main Dishes")}
+      <hr/>
       {renderCategory("Sides")}
+      <hr/>
       {renderCategory("Drinks")}
+      <hr/>
       {renderCategory("Desserts")}
       <Footer></Footer>
     </Box>

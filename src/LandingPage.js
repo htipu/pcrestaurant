@@ -23,10 +23,10 @@ function LandingPage() {
       <div style={backgroundpic} />
       <Box textAlign="center" style={{position: 'relative', zIndex: 1}}>
         <BasicTabs />
-        <Typography variant="h2" paragraph color="#FFFFFF ">
+        <Typography variant="h2" gutterBottom color="#FFFFFF">
           Secret Beast Restaurant
         </Typography>
-        <Typography variant="h4" paragraph color="#FFFFFF">
+        <Typography variant="h4" gutterBottom color="#FFFFFF">
           Welcome to Secret Beast Restaurant! We're delighted to have you.
         </Typography>
        
