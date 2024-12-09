@@ -98,28 +98,28 @@ const menuItems = [
       name: "Iced Beast Tea",
       category: "Drinks",
       description: "A refreshing iced tea, served cold with a slice of lemon and sweetened to your liking. Squeeze the lemon in for an added kick!",
-      image: IcedTea, // Placeholder image
+      image: IcedTea,
       price: "$2.29"
     },
       {
       name: "Secret Beast Sundae",
       category: "Desserts",
       description: "A decadent sundae with vanilla ice cream, chocolate syrup, whipped cream, and sprinkles.",
-      image: Sundae, // Placeholder image for Sundae
+      image: Sundae,
       price: "$4.99"
     },
     {
       name: "Beast Cake",
       category: "Desserts",
       description: "Rich, chocolate cake with layers of creamy frosting, topped with Beast sauce and sprinkles.",
-      image: Cake, // Placeholder image for Cake
+      image: Cake,
       price: "$5.99"
     },
     {
       name: "Beastly Pie",
       category: "Desserts",
       description: "A warm, fresh apple pie with a buttery crust and to die for flavor, served with vanilla ice cream.",
-      image: Pie, // Placeholder image for Pie
+      image: Pie,
       price: "$3.99"
     }
   ];
