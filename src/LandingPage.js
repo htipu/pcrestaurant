@@ -30,9 +30,9 @@ function LandingPage() {
           Welcome to Secret Beast Restaurant! We're delighted to have you.
         </Typography>
        
-        <div style={{height: '68vh', width:'100%'}}></div>
+        <div style={{height: '100vh', width:'100%'}}></div>
 
-        <div style={{height: '10vh', backgroundColor:'#11191b', color:'white', margin: 'auto'}}>
+        <div style={{height: '1vh', backgroundColor:'#11191b', color:'white', margin: 'auto'}}>
           
         </div>
       </Box>
