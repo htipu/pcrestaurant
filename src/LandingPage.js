@@ -32,12 +32,8 @@ function LandingPage() {
        
         <div style={{height: '68vh', width:'100%'}}></div>
 
-        <div style={{height: '100vh', backgroundColor:'#11191b', color:'white', margin: 'auto'}}>
-          <div style={{display:'grid',gridTemplateColumns:'repeat(2,1fr)',marginTop:'10rem', marginLeft:'10em'}}>
-            <Box style={{width:'70%',height:'10rem', backgroundColor:'#313032', borderRadius:'1rem'}}>test</Box>
-            <Box style={{width:'70%',height:'10rem', backgroundColor:'#313032', borderRadius:'1rem'}}>test2</Box>
-
-          </div>
+        <div style={{height: '10vh', backgroundColor:'#11191b', color:'white', margin: 'auto'}}>
+          
         </div>
       </Box>
       <Footer></Footer>
