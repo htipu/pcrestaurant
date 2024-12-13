@@ -7,8 +7,7 @@ const Footer =()=>{
             <div className='footerContent'>
                 Contact Us
                 <div className='contactInfo'>
-                    Location - Phone Number - Gmail - Hours
-                </div>
+                    123 Nowhere Lane, Nowhere, NY -- 845-678-9101 -- SecretBeast@fakemail.com -- Open 10am - 3am everyday                </div>
             </div>
         </footer>
     )

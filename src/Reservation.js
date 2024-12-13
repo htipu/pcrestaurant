@@ -22,7 +22,7 @@ function Reservation() {
         Reserve Now
       </Button>
     </Box>
-    <div style={{height:'50rem'}}>
+    <div style={{height:'32rem'}}>
     </div>
     <Footer></Footer>
     </Box>
